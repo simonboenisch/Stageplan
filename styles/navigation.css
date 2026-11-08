@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+/* Header */
+.header {
+    background-color: #cbd5e1;
+    /* slate-300 */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: bold;
+}
+.user-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-info {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn-logout {
+    background-color: #94a3b8;
+    /* slate-400 */
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000000;
+}
+/* Hauptbereich & Karten */
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 8.5rem;
+    background-color: #e2e8f0;
+    height: 55rem;
+    align-items: center;
+    gap: 1rem;
+}
+.card {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+}
+.card:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #fcfeff;
+}
+.card-title {
+    font-size: 1.5rem;
+    /* text-2xl */
+}
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #d1d6dd;
+    /* slate-200 */
+    height: 190px;
+    padding: 24px;
+}
+.footer-col {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-col a {
+    color: #000000;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.footer-col-border {
+    padding-left: 16px;
+    border-left: 2px solid #acb3bf;
+}
+.footer-heading {
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+main {
+    display: flex;
+}
+.main-stuff {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#neues{
+   padding: 1rem;
+   border-left: rgb(255, 83, 83) 4px solid;
+   border-radius: 4px;
+   background-color: #fcfeff;
+   box-shadow: #8a8989 0px 0px 5px 0.5px;
+   width: 100%;
+}
+.dashbord{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   padding-top: 0.5rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}

@@ -1,0 +1,5 @@
+// 3. Schleife, die durch alle Zeilen durchgeht und sie ausgibt
+while ($zeile = $ergebnis->fetchArray(SQLITE3_ASSOC)) {
+    // Hier den Spaltennamen anpassen, den du ausgeben willst (bei dir heißt er vermutlich 'test')
+    echo $zeile['test'] . "<br>";
+}

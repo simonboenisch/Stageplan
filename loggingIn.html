@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Header */
+.app-header {
+    background-color: #cbd5e1; /* Tailwind slate-300 */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.brand-title {
+    font-size: 1.875rem; /* Tailwind text-3xl */
+}
+
+.page-title {
+    font-size: 1.5rem; /* Tailwind text-2xl */
+    margin-right: 80px; /* Tailwind mr-20 */
+}
+
+/* Formular */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e8f0; /* Tailwind slate-200 */
+    margin: 80px; /* Tailwind m-20 */
+    height: 320px; /* Tailwind h-80 */
+    padding: 40px; /* Tailwind p-10 */
+    border-radius: 24px; /* Tailwind rounded-3xl */
+}
+
+.label-spaced {
+    margin-top: 24px; /* Tailwind mt-6 */
+}
+
+/* Inputs & Buttons */
+.form-input {
+    width: 100%;
+    padding: 8px; /* Tailwind p-2 */
+    background-color: #cbd5e1; /* Tailwind slate-300 */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px; /* Tailwind rounded */
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+}
+
+.btn-submit {
+    background-color: #cbd5e1; /* Tailwind slate-300 */
+    padding: 8px; /* Tailwind p-2 */
+    margin-top: 12px; /* Tailwind mt-3 */
+    border-radius: 4px; /* Tailwind rounded */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #94a3b8; /* Leichtes Abdunkeln beim Hover */
+}
+    </style>
+</head>
+
+<body>
+    <header class="app-header">
+        <div>
+            <p class="brand-title">Stageplan</p>
+        </div>
+        <p class="page-title">Login</p>
+        <a href=""></a>
+    </header>
+
+    <form action="login.php" method="post" class="login-form">
+        <label for="username">Benutzername</label>
+        <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-input" />
+
+        <label for="password" class="label-spaced">Passwort</label>
+        <input type="password" id="password" name="password" placeholder="Passwort" required class="form-input" />
+
+        <button type="submit" class="btn-submit">Einloggen</button>
+    </form>
+</body>
+
+</html>

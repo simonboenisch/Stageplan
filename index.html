@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen bei Stageplan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9; /* Tailwind bg-slate-100 */
+        }
+
+        /* Header Styles */
+        .app-header {
+            background-color: #cbd5e1; /* Tailwind bg-slate-300 */
+            height: 80px; /* Tailwind h-20 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .header-title {
+            font-size: 1.875rem; /* Tailwind text-3xl */
+        }
+
+        .btn-login {
+            background-color: #94a3b8; /* Tailwind bg-slate-400 */
+            color: #000000;
+            padding: 8px 20px;
+            border-radius: 6px; /* Tailwind rounded-md */
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-login:hover {
+            background-color: #78869b;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px; /* Tailwind p-10 */
+        }
+
+        .info-card {
+            background-color: #e5e7eb; /* Tailwind bg-gray-200 */
+            border-radius: 6px; /* Tailwind rounded-md */
+            padding-left: 8px; /* Tailwind pl-2 */
+            padding-top: 4px; /* Tailwind pt-1 */
+            padding-bottom: 16px; /* Tailwind pb-4 */
+            width: 100%;
+            box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.46);
+        }
+
+        .card-title {
+            font-size: 1.25rem; /* Tailwind text-xl */
+        }
+
+        .card-text {
+            margin-top: 24px; /* Tailwind mt-6 */
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header class="app-header">
+        <p class="header-title">Willkommen bei Stageplan</p>
+        <a href="loggingIn.html" class="btn-login">Login</a>
+    </header>
+    
+    <main class="main-content">
+        <section class="info-card">
+            <p class="card-title">Was ist Stageplan?</p>
+            <p class="card-text">
+                Stageplan ist ein Bühnenplanungstool, mit dem die Techniker der Realschule Feucht
+                Bühnen für den nächsten Auftritt planen können.
+                Es bietet ebenfalls viele andere nützliche Tools für Kommunikation, Planung und Übersichtlichkeit. Viel Spaß!
+            </p>
+        </section>
+    </main>
+</body>
+</html>

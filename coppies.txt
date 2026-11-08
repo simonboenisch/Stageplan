@@ -1,0 +1,81 @@
+
+	
+----------------------
+	
+<?php
+session_start();
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: loggingIn.html');
+    exit;
+}
+?>
+
+----------------------
+
+<!DOCTYPE html>
+<html lang="de">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title></title>
+ </head>
+ <body>
+	<header class="bg-[#d1d9e6] p-4 flex justify-between items-center shadow-sm">
+			<div>
+				<h1 class="text-2xl font-normal text-black leading-tight">Stageplan</h1>
+				<p class="text-sm text-gray-600"></p>
+			</div>
+			<a class="bg-[#8ba4bc] text-black px-6 py-1 rounded shadow-sm hover:bg-[#7a93ab]" href="navigation.php">Zurück</a>
+	</header>
+	<main>
+	
+	</main>
+ </body>
+</html>
+
+Stein|9039e74a4982c2342306ee6cd2f5e2852bc23141
+Technik01|1dc4442121a83dc4786b3404cdbed7b861fad535
+Luka|b78c2ec7b36e62903e09f0d358f0178793e9e97c
+Simon|32934e0ca15f789a005c4cb3707468e53e4bb986
+Leopold.S|22f14e12b48bc61935c94262f0ddbfaa4460201f
+Patrick|cc9f33de11d62a820f76b1b9775a9e9dbdbcdf76
+Christoph|4e608674d137d6fba02a09e21738015c469867b1
+test01|461b63747384ea62adefd257e78813d7041bdbee
+test02|2c48e27b6db11b1f37d6551bcbaa633bb8032fe9
+test03|2545f92fe61f2a4b1ed7c9139fb84fcf0fb30fb7
+
+
+
+<?php
+session_start();
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: ../loggingIn.html');
+    exit;
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="de">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title></title>
+ </head>
+ <body>
+	<header class="bg-[#d1d9e6] p-4 flex justify-between items-center shadow-sm">
+			<div>
+				<h1 class="text-2xl font-normal text-black leading-tight">Stageplan</h1>
+				<p class="text-sm text-gray-600"></p>
+			</div>
+			<a class="bg-[#8ba4bc] text-black px-6 py-1 rounded shadow-sm hover:bg-[#7a93ab]" href="../navigation.php">Zurück</a>
+	</header>
+	<main>
+		
+	</main>
+ </body>
+</html>
